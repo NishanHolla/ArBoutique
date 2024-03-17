@@ -9,6 +9,7 @@ import Root from './routes/root';
 import ErrorPage from "./error-page";
 import Login from './routes/login';
 import Navbar from './components/navbar';
+import MainPage from './components/products/mainpage';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         </Route>
         <Route path="login" element={<Login/>}></Route>
         <Route path="*" element={<ErrorPage />} />
+        <Route path="products" element={<MainPage/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
