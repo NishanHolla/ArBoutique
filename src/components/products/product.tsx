@@ -34,11 +34,11 @@ const Product: React.FC<{ key: React.Key } & ProdType> = (props) => {
       <h3 className="product-name">{name}</h3>
       <p className="product-description">{description}</p>
       <p className="product-price">{price}</p>
-      <button className="product-button" onClick={handleAddToCart}>
+      <button className="product-addtocart" onClick={handleAddToCart}>
         Add to cart
       </button>
-      <button className="product-button" onClick={handleViewDetails}>
-        View details
+      <button className="product-buynow" onClick={handleViewDetails}>
+        Buy Now!!
       </button>
     </div>
   );

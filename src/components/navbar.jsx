@@ -20,7 +20,7 @@ function Navbar(){
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-suto">
           <li class="nav-item">
-            <a class="nav-link" href="#">DRESSES</a>
+            <a class="nav-link" href="/products">DRESSES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">JEWELERY</a>

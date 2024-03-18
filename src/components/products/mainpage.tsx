@@ -1,38 +1,29 @@
-// MainPage.js
-import React from "react";
-import ProductsList from "./productList";
+import Product from './product';
+import products from "./items";
+import Navbar from "../navbar";
+import banner from '/src/assets/banner.gif';
+interface ProdType {
+  id: number;
+  image: string;
+  name: string;
+  description: string;
+  price: string;
+}
 
-// Define some dummy data for the products
-const products = [
-  {
-    id: 1,
-    image: "https://source.unsplash.com/random/300x300?sig=1",
-    name: "Product 1",
-    description: "This is a description of product 1",
-    price: "$10.00",
-  },
-  {
-    id: 2,
-    image: "https://source.unsplash.com/random/300x300?sig=2",
-    name: "Product 2",
-    description: "This is a description of product 2",
-    price: "$20.00",
-  },
-  {
-    id: 3,
-    image: "https://source.unsplash.com/random/300x300?sig=3",
-    name: "Product 3",
-    description: "This is a description of product 3",
-    price: "$30.00",
-  },
-];
-
+// const image = 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6df84585956631.6065d580967ea.gif';
 function MainPage() {
-  // Return the JSX for the main page component
   return (
-    <div className="container">
+    <div className="product-container">
+      <header>
+        <Navbar/>
+      </header>
       <h1 className="title">Welcome to the shopping site</h1>
-      <ProductsList products={products} />
+      <img src={banner} className="product-banner" alt={name} />
+        <div className="products-list">
+        {products.map((products) => (
+          <Product key={products.id} {...products as ProdType} />
+        ))}
+      </div>
     </div>
   );
 }

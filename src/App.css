@@ -152,3 +152,92 @@ ul{
   position: relative;
   left: -80px;
 }
+
+This is for products components
+/* Product.css */
+.product {
+  width: calc(33.33% - 20px); /* 33.33% width for each product with some spacing */
+  margin-bottom: 1cap; /* Add some bottom margin for spacing between rows */
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin-right: 15px; /* Add margin between items */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product-description {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.product-price {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-addtocart{
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-buynow{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #0056b3;
+}
+
+/* MainPage.css */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.product-banner{
+  width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
