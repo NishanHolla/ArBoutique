@@ -8,7 +8,6 @@ import {
 import Root from './routes/root';
 import ErrorPage from "./error-page";
 import Login from './routes/login';
-import Navbar from './components/navbar';
 import MainPage from './components/products/mainpage';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
