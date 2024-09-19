@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import * as ReactDOM from "react-dom/client";
 import {
   Routes,
@@ -14,14 +14,21 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <Route index element={<Root/>}></Route>
-          <Route path='home' element={<Root/>}></Route>
-        </Route>
-        <Route path="login" element={<Login/>}></Route>
+        {/* Root Route */}
+        <Route path="/" element={<Root />} />
+        
+        {/* Home Route */}
+        <Route path="/home" element={<Root />} />
+        
+        {/* Login Route */}
+        <Route path="/login" element={<Login />} />
+        
+        {/* Products Route */}
+        <Route path="/products" element={<MainPage />} />
+        
+        {/* Error Route for any undefined paths */}
         <Route path="*" element={<ErrorPage />} />
-        <Route path="products" element={<MainPage/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
-)
+);
